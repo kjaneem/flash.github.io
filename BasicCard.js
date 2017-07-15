@@ -6,7 +6,7 @@
 // The constructed object should have a back property that contains the text on the back of the card.
 
 // Creates a UserSearch Constructor
-var FlashCard = function(front, back) {
+var BasicCard = function(front, back) {
   this.front = front;
   this.back = back;
 };
