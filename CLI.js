@@ -1,4 +1,5 @@
 var BasicCard = require("./BasicCard");
+var ClozeCard = require("./ClozeCard");
 
 // Hold flashcard front - question
 // var flashCardFront = process.argv[2];
@@ -17,20 +18,22 @@ var BasicCard = require("./BasicCard");
 var firstPresident = new BasicCard(
     "Who was the first president of the United States?", "George Washington");
 
-console.log("BasicCard front :" + firstPresident.front);
-console.log("BasicCard back :" + firstPresident.back);
+console.log("\n");
+console.log("BasicCard front:  " + firstPresident.front);
+console.log("BasicCard back:  " + firstPresident.back);
 
 var firstPresidentCloze = new ClozeCard(
     "George Washington was the first president of the United States.", "George Washington");
 
+console.log("\n");
 // "George Washington"
-console.log("ClozeCard cloze: " + firstPresidentCloze.cloze); 
+console.log("ClozeCard cloze:  " + firstPresidentCloze.cloze); 
 
 // " ... was the first president of the United States.
-console.log("ClozeCard partial: " + firstPresidentCloze.partial); 
+console.log("ClozeCard partial:  " + firstPresidentCloze.partial); 
 
 // "George Washington was the first president of the United States.
-console.log("ClozeCard fullText: " + firstPresidentCloze.fullText); 
+console.log("ClozeCard fullText:  " + firstPresidentCloze.fullText); 
 
 
 
